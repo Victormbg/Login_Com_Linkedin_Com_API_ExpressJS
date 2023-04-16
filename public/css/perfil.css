@@ -1,0 +1,80 @@
+/* Estilos para o cabeçalho */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.cabecalho h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.cabecalho img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Estilos para o conteúdo */
+.conteudo {
+  padding: 20px;
+}
+
+.conteudo h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.conteudo h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.conteudo p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Estilos para as seções de experiência profissional e habilidades */
+.experiencia-profissional {
+  margin-bottom: 30px;
+}
+
+.habilidades {
+  margin-bottom: 30px;
+}
+
+.habilidades p {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+.logout {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e74c3c;
+}

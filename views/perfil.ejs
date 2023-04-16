@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/perfil.css">
+  </head>
+  <body>
+    <div class="perfil">
+      <div class="cabecalho">
+        <h1>Bem-vindo ao seu perfil, <%= userName || '' %>!</h1>
+        <% if (userPhoto) { %>
+          <img src="<%= userPhoto %>" alt="Foto do usuário">
+        <% } %>
+      </div>
+      <div class="conteudo">
+        <h2>Experiência Profissional</h2>
+        <% if (userExperience) { %>
+          <% userExperience.forEach(function (experience) { %>
+            <h3><%= experience.company %></h3>
+            <p><%= experience.title %></p>
+            <p><%= experience.startDate %> - <%= experience.endDate %></p>
+          <% }); %>
+        <% } %>
+
+        <h2>Habilidades</h2>
+        <% if (userSkills) { %>
+          <% userSkills.forEach(function (skill) { %>
+            <p><%= skill %></p>
+          <% }); %>
+        <% } %>
+        <div class="logout">
+          <form action="/logout" method="post">
+            <button type="submit">Logout</button>
+          </form>
+        </div>        
+      </div>
+    </div>
+  </body>
+</html>
